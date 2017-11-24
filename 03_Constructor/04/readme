@@ -1,0 +1,8 @@
+1. 在一个类中使用另外的类类型定义参数的，初始化时可以使用以下方法初始化
+Student(int stu_id, char *father_name, char *mother_name, int FatherAge = 40, int MotherAge = 39) : mother(mother_name), father(father_name)
+
+2. father mother构造函数的调用顺序与参数的定义顺序有关，与上面的会初始化顺序无关
+
+3. 提供默认参数时，一次从后到前提供，不能跨越中间的参数
+
+4. 析构函数调用时与构造函数相反
